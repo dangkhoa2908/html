@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color:#dbdbdb
 }
 
 * {
@@ -60,11 +61,27 @@ html {
 }
 
 .modal__body {
-    width: 400px;
-    height: 200px;
     background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
     border-radius: 5px;
+}
+
+/* Btn Style */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    
 }
